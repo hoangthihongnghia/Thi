@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bai 2</title>
+<style>
+    #triangle {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div id="triangle"></div>
+
+    <script>
+        function numberOneTriangle(n) {
+            if (n < 1 || n > 10) {
+                document.getElementById("triangle").innerText = "Số không hợp lệ. Vui lòng nhập số trong khoảng từ 1 đến 10.";
+                return;
+            }
+
+            let triangleStr = "";
+            for (let i = 1; i <= n; i++) {
+                triangleStr += '$'.repeat(i) + "<br>";
+            }
+            document.getElementById("triangle").innerHTML = triangleStr;
+        }
+
+        // Test function
+        numberOneTriangle(6);
+    </script>
+</body>
+</html>

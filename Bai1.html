@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Nhập hai số a và b (a < b):</h2>
+    <form id="form">
+        a: <input type="number" id="a" name="a" min="1" required>
+        b: <input type="number" id="b" name="b" min="2" required>
+        <input type="submit" value="Tính toán">
+    </form>
+    <div id="result"></div>
+    <div id="primeList"></div>
+
+    <script>
+        function isPrime(num) {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        function sumPrimes(a, b) {
+            let sum = 0;
+            for (let i = a; i <= b; i++) {
+                if (isPrime(i)) sum += i;
+            }
+            return sum;
+        }
+
+        function listPrimes(a, b) {
+            let primeList = '';
+            for (let i = a; i <= b; i++) {
+                if (isPrime(i)) {
+                    primeList += `<p>${i}</p>`;
+                }
+            }
+            return primeList;
+        }
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const a = parseFloat(form.a.value);
+            const b = parseFloat(form.b.value);
+            if (a < b) {
+                const result = sumPrimes(a, b);
+                const primeList = listPrimes(a, b);
+                document.getElementById('result').innerText = `Tổng các số nguyên tố giữa ${a} và ${b} là: ${result}`;
+                document.getElementById('primeList').innerHTML = `Các số nguyên tố trong khoẳng từ ${a} đến ${b} là: ${primeList}`;
+            } else {
+                document.getElementById('result').innerText = 'Hãy điền số nguyên tố a < b.';
+                document.getElementById('primeList').innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>

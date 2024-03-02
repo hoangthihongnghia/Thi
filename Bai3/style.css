@@ -1,0 +1,102 @@
+
+.search-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+        display: inline-block;
+        width: 200px;  
+      }
+     
+      .search-box input[type="text"] {
+        border: none;
+        outline: none;
+        width: 90%;
+      }
+    
+      .menu {
+        display: inline-block;
+      }
+    
+      .menu button {
+        /* background-color: #4C5B5C; */
+        border: none;
+        /* color: white; */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+    
+      
+      /* Hover state for buttons */
+      .menu button:hover {
+        background-color: #665EFF;
+        color: white;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .user-cart {
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: 100px;
+      }
+      
+      /* .cart {
+        border-radius: 2%;
+        background-color: white;
+        padding: 40px;
+      } */
+      
+      .user-carts {
+        width: 255px;
+        height: 400px;
+      }
+      
+      .user-carts img {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        
+      }
+      .user-carts h2 {
+        font-size: 20px;
+        color: #343a40;
+        line-height: 29px;
+        margin-bottom: 5px;
+      }
+     
+      .user-carts p {
+        color: #6c757d;
+        font-size: 17px;
+        margin-bottom: 10px;
+        line-height: 28.9px;
+      }
+      .user-cart  {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .user-carts button{
+        background-color: white;
+        color: black;
+        border: 1px solid #73ceea;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .user-cart ul:hover {
+        border: 1px solid #73ceea;
+        border-radius: 10px;
+      }
+    
+
+    
+    
