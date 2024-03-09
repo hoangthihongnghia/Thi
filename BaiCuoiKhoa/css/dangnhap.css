@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+#form-main {
+    width: 30%;
+    height: 100%;
+    margin: 60px auto;
+    text-align: center;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    #form-main {
+        width: 55%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    #form-main {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    #form-main {
+        width: 85%;
+        height: 100%;
+    }
+}
+
+#form-div {
+    background: white;
+    border: 5px pink solid;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+}
+
+.change-header {
+    position: relative;
+    color: #00415d;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(176, 255, 225);
+    text-align: center;
+}
+
+.change-header a {
+    padding: 0 10%;
+    text-decoration: none;
+    color: rgba(153, 149, 149, 0.87);
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.change-header .active {
+    color: pink;
+    font-size: 18px;
+}
+
+#form-div hr {
+    border: 1px solid pink;
+}
+
+#form-div h3 {
+    color: rgb(192, 192, 192);
+}
+
+#form-circle img {
+    width: 20%;
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px pink solid;
+    background-color: white;
+}
+
+#form-circle {
+    position: absolute;
+    top: -17%;
+    width: 100%;
+}
+
+#form-div input,
+button {
+    padding: 15px;
+    /*border: 1px solid #ccc;*/
+    border: none;
+    border-bottom: 2px solid pink;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#form-div input:focus {
+    outline: none;
+    border: 0;
+    background-color: rgba(255, 223, 228, 0.87);
+}
+
+#button {
+    background-color: rgb(247, 150, 166);
+    border: none;
+}
+
+.form-login .forgot-password {
+    width: 50%;
+    text-align: left;
+    text-decoration: underline;
+    color: #888;
+    font-size: 0.75rem;
+}

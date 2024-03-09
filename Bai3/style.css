@@ -32,8 +32,6 @@
         transition: background-color 0.3s;
       }
     
-      
-      /* Hover state for buttons */
       .menu button:hover {
         background-color: #665EFF;
         color: white;
@@ -49,11 +47,6 @@
         margin-bottom: 100px;
       }
       
-      /* .cart {
-        border-radius: 2%;
-        background-color: white;
-        padding: 40px;
-      } */
       
       .user-carts {
         width: 255px;
