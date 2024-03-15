@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <link rel="stylesheet" href="../css/voucher.css">
+</head>
+<body>
+    <div class="voucher-form">
+        <input type="hidden" id="voucher-id" value="">
+        <label for="voucher-name">Tên:</label><br>
+        <input type="text" id="voucher-name" name="voucher-name"><br>
+        <label for="voucher-condition">Điều kiện:</label><br>
+        <input type="text" id="voucher-condition" name="voucher-condition"><br>
+        <label for="voucher-value">Giá trị:</label><br>
+        <input type="text" id="voucher-value" name="voucher-value"><br>
+        <label for="voucher-start-date">Ngày áp dụng:</label><br>
+        <input type="date" id="voucher-start-date" name="voucher-start-date"><br>
+        <label for="voucher-end-date">Ngày hết hạn:</label><br>
+        <input type="date" id="voucher-end-date" name="voucher-end-date"><br>
+        <label for="voucher-quantity">Số lượng:</label><br>
+        <input type="number" id="voucher-quantity" name="voucher-quantity"><br>
+        <label for="voucher-description">Mô tả:</label><br>
+        <textarea id="voucher-description" name="voucher-description"></textarea><br>
+        <label for="voucher-status">Trạng thái:</label><br>
+        <select id="voucher-status" name="voucher-status">
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+        </select><br>
+        <input type="submit" value="Submit">
+      </div>
+</body>
+</html>
